@@ -1,0 +1,39 @@
+body, html { 
+	font-family: 'Quicksand', sans-serif; 
+	color: #C0B490; 
+	overflow: hidden; 
+}
+.container { 
+	position: absolute; 
+	height: 480px; 
+	width: 100%; 
+	top: 50%;
+	transform: translate(0, -50%); 
+}
+.content { 
+	box-sizing: border-box; 
+	background: black; 
+	box-sizing: border-box; 
+	width: 640px; 
+	height: 480px; 
+	padding: 10px 25px 10px 25px; 
+}
+
+.blink {
+	display: inline-block;
+	height: 2px;
+	width: 7px;
+	margin-left: 2px;
+	border-bottom: 2px solid #C0B490;
+	animation: 1s blink step-end infinite;
+	-webkit-animation: 1s blink step-end infinite;
+} 
+
+@keyframes blink {
+	from, to {
+    	border-bottom: 2px solid #C0B490;
+  	}
+  	50% {
+    	border-bottom: none;
+  	}
+}
