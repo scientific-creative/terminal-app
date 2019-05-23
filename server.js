@@ -29,6 +29,12 @@ io = socketIO(server);
 // On client connection
 io.on('connection', function (socket) {  
 	console.log('a user connected');
+
+	var dd_controllers = ['journey'];
+	for (var i = 0; i<controllers.length; i++) {
+        require('./app/controllers/' + controllers[i] + '.controller')(socket);
+    }
+
 	var controllers = ['comments', 'posts'];
 	for (var i = 0; i<controllers.length; i++) {
         require('./controllers/' + controllers[i] + '.controller')(socket);
