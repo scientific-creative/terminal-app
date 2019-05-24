@@ -4,14 +4,14 @@
 		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 		<link href="/app/app.css" rel="stylesheet">
 		<script src="/socket.io/socket.io.js"></script>
-		<script>
-			var socket = io('http://localhost:5000');
-		</script>
+		<script src="/app/js/app.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="content" style="margin: 0 auto;">
-				<p>> test<span class="blink"></span></p>
+				<div>
+					<span id="terminal"></span><span class="blink"></span>
+				</div>
 			</div>
 		</div>
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
