@@ -4,15 +4,23 @@
 		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 		<link href="/app/app.css" rel="stylesheet">
 		<script src="/socket.io/socket.io.js"></script>
-		<script src="/app/js/app.js"></script>
+
 	</head>
 	<body>
 		<div class="container">
+			
+			<canvas id="myCanvas" width="300" height="200" style="border:1px solid #d3d3d3;">
+				Your browser does not support the canvas element.
+			</canvas>
+			<script src="/app/js/app.js"></script>			
+
+			<!--
 			<div class="content" style="margin: 0 auto;">
 				<div>
-					<span id="terminal"></span><span class="blink"></span>
+					<span id="terminal"></span><span cass="blink"></span>
 				</div>
 			</div>
+			-->
 		</div>
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	</body>

@@ -1,7 +1,10 @@
 var socket = io('http://localhost:5000');
 
-// Add a comment
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.font="16px Arial";
+ctx.textAlign = "center";
+
 socket.on('place.add', function (data) {
-    var $row = $('<span> ' + data.place + '</span>');
-    $('#terminal').append($row);
+	ctx.fillText(data.place, canvas.width/2, canvas.height/2);
 });
